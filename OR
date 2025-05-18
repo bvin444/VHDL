@@ -1,0 +1,21 @@
+# Simulating an Or Gate in VHDL
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity or_gate is
+    port (
+        input_1     : in std_logic;
+        input_2     : in std_logic;
+        output_or  : out std_logic;
+    );
+end and_gate;
+
+architecture behavioral of or_gate is
+    signal or_GATE : std_logic;
+
+begin
+
+    or_GATE <= input_1 or input_2;
+    output_or <= or_GATE;
+
+end behavioral;
