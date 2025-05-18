@@ -1,0 +1,21 @@
+# Simulating an and Gate in VHDL
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity and_gate is
+    port (
+        input_1     : in std_logic;
+        input_2     : in std_logic;
+        output_and  : out std_logic;
+    );
+end and_gate;
+
+architecture behavioral of and_gate is
+    signal and_GATE : std_logic;
+
+begin
+
+    and_GATE <= input_1 and input_2;
+    output_and <= and_GATE;
+
+end behavioral;
